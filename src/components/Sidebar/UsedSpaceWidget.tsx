@@ -1,0 +1,27 @@
+export function UsedSpaceWidget() {
+  return (
+    <div className="flex flex-col gap-4 rounded-lg bg-violet-50 px-4 py-5">
+      <div className="space-y-1">
+        <span className="text-sm/5 font-medium text-violet-700">
+          Espaço usado
+        </span>
+        <p className="text-sm/5 text-violet-500">
+          Sua equipe usou 80% do seu espaço disponível. Precisa de mais?
+        </p>
+      </div>
+
+      <div className="h-2 rounded-full bg-violet-100">
+        <div className="h-2 w-3/4 rounded-full bg-violet-600"></div>
+      </div>
+
+      <div className="space-x-3">
+        <button className="text-sm font-medium text-violet-500 hover:text-violet-700">
+          Ignorar
+        </button>
+        <button className="text-sm font-medium text-violet-700 hover:text-violet-900">
+          Atualizar plano
+        </button>
+      </div>
+    </div>
+  )
+}
